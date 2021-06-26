@@ -1,0 +1,34 @@
+// @types/express
+
+/** MÉTODOS:
+ * Get    => buscar uma informação
+ * Post   => Inserir (Criar) uma informação
+ * Put    => Alterar uma informação
+ * Delete => Remover uma informação
+ * Patch  => Alterar uma informação especifica
+ */
+
+/**
+ * Tipos de parametros:
+ * Routes Params => http://localhost:3000/produutos/123456789
+ * Query Params => http://localhost:3000/produtos?name=teclado&description=tecladobom&
+ * 
+ * Body Params => {
+ *  "name": "teclado"
+ * "description": "teclado bom"
+ * }
+ */
+
+ //request => entrando
+//response => saindo
+
+//http://localhost:3000
+
+app.get("/test", (request, response) => {
+
+    return response.send("Olá NLW");
+});
+
+app.post("/test-post", (request, response) => {
+    return response.send("Olá NLW método POST");
+});
